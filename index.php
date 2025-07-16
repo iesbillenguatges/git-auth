@@ -1,21 +1,10 @@
 <?php
 session_start();
-
 if (!isset($_SESSION['username'])) {
-    header('Location: auth.php');
+    echo '<a href="auth.php">Inicia sessió amb GitHub</a>';
     exit;
 }
-?>
-<!DOCTYPE html>
-<html lang="ca">
-<head>
-    <meta charset="UTF-8">
-    <title>Benvingut</title>
-</head>
-<body>
-    <h1>Estàs dins com a <?php echo htmlspecialchars($_SESSION['username']); ?></h1>
-    <form action="logout.php" method="post">
-        <button type="submit">Logout</button>
-    </form>
-</body>
-</html>
+
+echo "<h1>Estàs dins!</h1>";
+echo "<p>Usuari: " . htmlspecialchars($_SESSION['username']) . "</p>";
+echo '<a href="logout.php">Logout</a>';
