@@ -1,7 +1,32 @@
+# PHP GitHub OAuth Login App
+
+Aplicació mínima en PHP que permet l’autenticació d’usuaris mitjançant **GitHub OAuth** i mostra un panell personalitzat amb el seu nom d’usuari i opció de logout.
+
+## Característiques
+
+- Login OAuth amb GitHub.
+- Interfície visual moderna i responsiva.
+- Control de sessió per usuari.
+- Desplegable fàcilment amb Docker.
+- Compatible amb serveis com [Render](https://render.com).
 
 ---
 
-## 🔧 Configuració OAuth a GitHub
+## Estructura del projecte
+
+```
+ github-auth-app
+├── auth.php # Gestió del flux OAuth amb GitHub
+├── index.php # Pàgina principal amb sessió d’usuari
+├── logout.php # Tanca la sessió de l'usuari
+├── Dockerfile # Per a desplegament amb Docker
+├── .render.yaml # (Opcional) Configuració per a Render
+└── README.md # Aquest fitxer
+
+```
+---
+
+## Configuració OAuth a GitHub
 
 1. Ves a [GitHub Developer Settings](https://github.com/settings/developers) → **OAuth Apps**.
 2. Crea una nova aplicació amb:
@@ -14,7 +39,7 @@
 
 ---
 
-## 🌍 Variables d'entorn necessàries
+## Variables d'entorn necessàries
 
 A Render o local, configura les següents variables:
 
@@ -24,7 +49,7 @@ A Render o local, configura les següents variables:
 
 ---
 
-## 🐳 Desplegament amb Docker
+## Desplegament amb Docker
 
 ### 1. Dockerfile
 
