@@ -55,8 +55,6 @@ A Render o local, configura les següents variables:
 ```Dockerfile
 FROM php:8.2-apache
 
-RUN docker-php-ext-install pdo
-
 COPY . /var/www/html/
 
 EXPOSE 80
