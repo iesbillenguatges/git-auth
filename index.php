@@ -31,6 +31,7 @@ if (!isset($_SESSION['username'])) {
     </head>
     <body>
         <h1>Benvingut</h1>
+        <p>Vols usar un altre compte? <a href="https://github.com/logout" target="_blank">Tanca sessió de GitHub</a> primer.</p>
         <a href="auth.php">Inicia sessió amb GitHub</a>
     </body>
     </html>';
