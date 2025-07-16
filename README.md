@@ -1,4 +1,4 @@
-# PHP GitHub OAuth Login App
+# PHP GitHub OAuth Login App en render.com (docker)
 
 Aplicació mínima en PHP que permet l’autenticació d’usuaris mitjançant **GitHub OAuth** i mostra un panell personalitzat amb el seu nom d’usuari i opció de logout.
 
