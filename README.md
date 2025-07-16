@@ -20,7 +20,6 @@ Aplicació mínima en PHP que permet l’autenticació d’usuaris mitjançant *
 ├── index.php # Pàgina principal amb sessió d’usuari
 ├── logout.php # Tanca la sessió de l'usuari
 ├── Dockerfile # Per a desplegament amb Docker
-├── .render.yaml # (Opcional) Configuració per a Render
 └── README.md # Aquest fitxer
 
 ```
